@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Archivo:ital,wght@0,100..900;1,100..900&family=Lovers+Quarrel&display=swap');
+
+:root {
+    --black: #0E0A0D;
+    --white: #FADADD;
+    --hot-pink: #F30053;
+    --pale-pink: #FCB1C7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--pale-pink);
+    padding: 0 4rem;
+}
+
+.logo a {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 6rem;
+    color: var(--black);
+    text-shadow: 2px 2px var(--pale-pink);
+}
+
+.logo-dot {
+    color: var(--hot-pink);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-transform: lowercase;
+}
+
+.nav-item a {
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+}
+
+.nav-item a:hover {
+    background-color: var(--pale-pink);
+    color: var(--black);
+}
+
+/* Hero Section */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background: url('../images/banner/banner.png') center/cover no-repeat;
+    padding: 0 4rem;
+    margin-bottom: 4rem;
+}
+
+.hero-tagline {
+    font-family: 'Lovers Quarrel', sans-serif;
+    text-transform: lowercase;
+    font-size: 12rem;
+    color: var(--black);
+    text-shadow: 4px 4px var(--pale-pink);
+}
+
+.hero-btn {
+    background: var(--hot-pink);
+    color: var(--white);
+    border: 2px solid var(--black);
+    padding: 1rem 2rem;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+
+.hero-btn:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+/* Featured Products Section */
+
+.featured-products {
+    padding: 4rem 10rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5rem 3rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--pale-pink);
+    padding-top: 2rem;
+}
