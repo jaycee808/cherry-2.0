@@ -17,6 +17,6 @@
         <ul class="nav-menu">
             <li class="nav-item <?php if (is_page('about-us')) echo 'current-page'; ?>"><a href="<?php echo site_url('/about-us'); ?>">About</a></li>
             <li class="nav-item <?php if (is_page('shop')) echo 'current-page'; ?>"><a href="<?php echo site_url('/shop'); ?>">Shop</a></li>
-            <li class="nav-item <?php if (is_page('cart-checkout')) echo 'current-page'; ?>"><a href="<?php echo site_url('/cart-checkout'); ?>">Cart</a></li>
+            <li class="nav-item <?php if (is_page('cart')) echo 'current-page'; ?>"><a href="<?php echo site_url('/cart'); ?>">Cart</a></li>
         </ul>
     </nav>

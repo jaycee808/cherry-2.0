@@ -98,6 +98,7 @@ a {
     transition: all 0.3s ease;
     width: fit-content;
     margin-bottom: 1rem;
+    border-radius: 6px;
 }
 
 .hero-btn:hover {
@@ -126,10 +127,91 @@ a {
     gap: 2rem;
 }
 
+/* Pages & Post Styles */
+
+.page-container {
+    padding: 0 4rem;
+}
+
+.post-container {
+    padding: 0 4rem;
+}
+
+/* WooCommerce Plug In Customization */
+
+.woocommerce span.onsale {
+    background: var(--white);
+    color: var(--hot-pink);
+}
+
+.woocommerce ul.products li.product .button {
+    display: inline-block;
+    margin-top: 1em;
+    background: var(--hot-pink);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.woocommerce ul.products li.product .button:hover {
+    background: var(--pale-pink);
+    color: var(--black)
+}
+
+.woocommerce div.product form.cart div.quantity {
+    font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: .618em 1em;
+    font-weight: 700;
+    border-radius: 3px;
+    left: auto;
+    color: var(--black);
+    background-color: var(--white);
+    border: 0;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
+    margin-right: 1rem;
+}
+
+.woocommerce .quantity .qty {
+    background-color: var(--white);
+    border: none;
+    width: 3.631em;
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.woocommerce div.product form.cart .button {
+    background: var(--hot-pink);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.woocommerce div.product form.cart .button:hover {
+    background: var(--pale-pink);
+    color: var(--black)
+}
+
+.woocommerce-message {
+    border-top-color: var(--hot-pink);
+}
+
+.woocommerce-message::before {
+    content: "\e015";
+    color: var(--hot-pink);
+}
+
 /* Footer */
 
 .footer {
-    background-color: var(--hot-pink);
+    background-color: var(--pale-pink);
     color: var(--black);
     padding: 5rem 3rem;
     text-align: center;
