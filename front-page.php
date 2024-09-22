@@ -7,8 +7,8 @@
 
 <section class="featured-products">
     <h2 class="section-title">Featured Products</h2>
-    <div class="product-grid">
-        
+    <div class="product-display">
+    
     </div>
 </section>
 

@@ -94,11 +94,13 @@ a {
     border: 2px solid var(--black);
     padding: 1rem 2rem;
     font-size: 2.2rem;
-    text-transform: uppercase;
     transition: all 0.3s ease;
     width: fit-content;
     margin-bottom: 1rem;
     border-radius: 6px;
+    font-family: 'Archivo Black', sans-serif;
+    margin-bottom: 3rem;
+    color: var(--white);
 }
 
 .hero-btn:hover {
@@ -121,12 +123,6 @@ a {
     color: var(--white);
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
 /* Pages & Post Styles */
 
 .page-container {
@@ -138,6 +134,19 @@ a {
 }
 
 /* WooCommerce Plug In Customization */
+
+.woocommerce .woocommerce-ordering {
+    margin: 0 0 1em;
+    
+}
+
+.woocommerce .woocommerce-ordering select {
+    vertical-align: top;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 1.5rem;
+    background: var(--black);
+    color: var(--white);
+}
 
 .woocommerce span.onsale {
     background: var(--white);
@@ -243,4 +252,109 @@ a {
 .footer-bottom {
     border-top: 1px solid var(--pale-pink);
     padding-top: 2rem;
+}
+
+/* Media Queries */
+
+
+@media only screen and (max-width: 800px) {
+
+    body {
+        font-size: 1.4rem;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+
+    .logo a {
+        font-size: 5rem;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Hero Section */
+
+    .hero-section {
+        padding: 0 2rem;
+        height: 60vh;
+        margin: 0 2rem;
+    }
+
+    .hero-tagline {
+        font-size: 6rem;
+        margin-bottom: -2rem;
+    }
+
+    .hero-btn {
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+    }
+
+    /* Featured Products */
+
+    .featured-products {
+        padding: 2rem;
+    }
+
+    .section-title {
+        font-size: 2.8rem;
+    }
+
+    .page-container {
+        padding: 0 2rem;
+    }
+    
+    .post-container {
+        padding: 0 2rem;
+    }
+
+    /* Footer */
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .logo a {
+        font-size: 4rem;
+    }
+
+    .hero-section {
+        padding: 0 2rem;
+        height: 60vh;
+        margin: 0;
+    }
+
+    .hero-tagline {
+        font-size: 6rem;
+    }
+
+    .hero-btn {
+        font-size: 1.2rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1.6rem;
+    }
 }
