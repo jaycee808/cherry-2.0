@@ -17,7 +17,7 @@ Cherry is an online e-commerce store specialising in make-up and fragrance. It o
 
 ## Link to deployed site
 
-[https://cherry-beauty.com](https://cherrry.online)
+[https://cherrry.online](https://cherrry.online)
 
 ## Technologies Used
 
