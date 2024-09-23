@@ -7,9 +7,7 @@
 
 <section class="featured-products">
     <h2 class="section-title">Featured Products</h2>
-    <div class="product-display">
-    
-    </div>
+        <div class="featured-products-display"><?php echo do_shortcode("[woo_product_slider id=124]")?></div>
 </section>
 
 <?php get_footer(); ?>

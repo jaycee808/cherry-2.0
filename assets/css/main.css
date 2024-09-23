@@ -133,6 +133,48 @@ a {
     padding: 0 4rem;
 }
 
+/* About Us Section */
+
+.full-page-image img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.about-us-heading {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.about-us-subheading {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--hot-pink);
+}
+
+.about-us-paragraph {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.list-item {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+}
+
+
 /* WooCommerce Plug In Customization */
 
 .woocommerce .woocommerce-ordering {
@@ -256,7 +298,6 @@ a {
 
 /* Media Queries */
 
-
 @media only screen and (max-width: 800px) {
 
     body {
@@ -317,6 +358,30 @@ a {
         padding: 0 2rem;
     }
 
+    .about-us-heading {
+        font-size: 2.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .about-us-subheading {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-us-paragraph {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .list-item {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .full-page-image img {
+        height: 50vh;
+    }
+
     /* Footer */
 
     .footer-content {
@@ -336,6 +401,10 @@ a {
         font-size: 4rem;
     }
 
+    .nav-item {
+        font-size: 1rem;   
+    }
+
     .hero-section {
         padding: 0 2rem;
         height: 60vh;
@@ -352,6 +421,30 @@ a {
 
     .section-title {
         font-size: 1.6rem;
+    }
+
+    .about-us-heading {
+        font-size: 1.6rem;
+        margin: 1rem 0;
+    }
+
+    .about-us-subheading {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .about-us-paragraph {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .list-item {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .full-page-image img {
+        height: 40vh;
     }
 
     .footer-section h4 {
